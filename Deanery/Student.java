@@ -1,6 +1,7 @@
-package Deanery;
+package Deanery; //TODO package names should be lowercase
 
-public class Student extends Exception {
+//TODO if you extend this class, it could be abstract - because we don't want to create Students that are neither PartTime nor FullTime
+public class Student extends Exception { //TODO Noooo not like that - if you extend an exception, it means that a Student class IS AN EXCEPTION itself - and that is not true
     private final int id;
     private final String name;
     private final String lastName;

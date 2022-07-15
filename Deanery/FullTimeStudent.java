@@ -7,6 +7,9 @@ public class FullTimeStudent extends Student{
     public FullTimeStudent(int id, String name, String lastName) {
         super(id, name, lastName);
     }
+    //TODO same as in the PartTimeStudent class
+    // + as you can see there is some duplication of a code in here -> it would be better to keep the verification logic in the Student class
+    // and only keep the proper Rooms collection in the child classes
     public void serve(String roomNumber, int hour) throws Exception {
         if(roomNumber.equals("A123") || roomNumber.equals("B123")) {
             if((roomNumber.equals("A123") && (hour>= 8 && hour <=16)) || (roomNumber.equals("B123") && (hour>= 9 && hour <= 17))) {
